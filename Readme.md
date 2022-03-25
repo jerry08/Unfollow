@@ -1,4 +1,4 @@
-# Unfollowers (Discontinued)
+# Unfollowers
 Simple app to find the people who didn't follow you back.
 
 # Features
