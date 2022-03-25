@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:key="theme_category"
+        app:title="@string/title_preferences">
+        <ListPreference
+            app:key="theme"
+            app:title="@string/title_preferred_theme"
+            app:useSimpleSummaryProvider="true"
+            app:entries="@array/settings_themes"
+            app:entryValues="@array/settings_themes_values"
+            app:defaultValue="adaptive"/>
+        <ListPreference
+            app:key="lang"
+            app:title="@string/title_preferred_lang"
+            app:useSimpleSummaryProvider="true"
+            app:entries="@array/settings_langs"
+            app:entryValues="@array/settings_langs_values"
+            app:defaultValue="sysdef" />
+        <SwitchPreference
+            app:key="auto_refresh"
+            app:title="@string/title_auto_refresh"
+            app:defaultValue="true"
+            app:summary="@string/msg_summary_auto_refresh"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/title_update">
+        <SwitchPreference
+            app:key="auto_update_check"
+            app:title="@string/title_auto_update_check"
+            app:defaultValue="true"
+            app:isPreferenceVisible="false" />
+        <Preference
+            app:key="update_check"
+            app:title="@string/title_update_check"
+            app:isPreferenceVisible="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/title_about">
+        <Preference
+            app:key="terms"
+            app:title="@string/title_terms" />
+        <Preference
+            app:key="donate"
+            app:title="@string/title_donate"
+            app:isPreferenceVisible="false"/>
+        <Preference
+            app:key="about"
+            app:title="@string/title_about" />
+    </PreferenceCategory>
+    <Preference
+        app:enabled="false" />
+</PreferenceScreen>
